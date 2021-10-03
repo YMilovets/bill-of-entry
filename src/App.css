@@ -1,0 +1,235 @@
+@import url("./reset.css");
+@font-face {
+  font-family: "PT Sans";
+  src: url("./fonts/PTSans-Regular.ttf")
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/ProximaNova-Regular.ttf")
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("./fonts/ProximaNova-Bold.ttf")
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: url("./fonts/ProximaNova-Light.ttf")
+}
+@media (max-width: 1200px) {
+  .form-bill__header.m-form-header {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .form-bill__text.m-form-text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .header {
+    height: 76px;
+    overflow: hidden;
+    transition: height .5s linear;
+  }
+  .header.header--active {
+    height: var(--compact-menu-height);
+    top: 0;
+    transition: height .5s linear;
+  }
+  .m-menu.menu {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .menu__logo {
+    display: none;
+  }
+  .menu__compact {
+    width: 20px;
+    height: 12px;
+    background: url("./menu/menu__compact.png");
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 33px 15px 31px auto;
+  }
+  .menu__item {
+    border-top: 1px solid #fff;
+  }
+}
+.header {
+  background: #0F7A65;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.menu__item {
+  padding: 33px 30px 34px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+}
+.menu__logo {
+  box-sizing: content-box;
+  margin: 10px 0 8px 30px;
+  width: 59px;
+  height: 72px;
+  background: url("./menu/menu_logo.png");
+  list-style: none;
+  flex-shrink: 0;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.menu__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.form-bill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-bill__logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background: #25B887;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form-bill__logo--letter::before {  
+  width: 66px;
+  height: 66px;
+  background: url("./form-reg/form-reg__logo--letter.png")
+}
+.form-bill__logo--activate::before {
+  width: 78px;
+  height: 56px;
+  background: url("./form-reg/form-reg__logo--activate.png")
+}
+.form-bill__logo::before {
+  display: block;
+  content: "";
+}
+.form-bill__header {
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.form-bill__text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #272727;
+  margin-bottom: 50px;
+}
+.form-bill__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.form-bill__email {
+  width: 350px;
+  height: 50px;
+  border: 1px solid #9B9B9B;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #9B9B9B;
+}
+.form-bill__send {
+  height: 50px;
+  background: #25B887;
+  border-radius: 5px;
+  border: 1px solid #25B887;
+
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.form-bill__link {
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #272727;
+}
+.form-bill__number {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #9B9B9B;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #9B9B9B;
+}
+.form-bill__number:last-child {
+  margin: 0;
+}
+.form-bill__send--confirm {
+  width: 260px;
+}
+.form-bill__send--reg {
+  width: 350px;
+}
+.text-confirm {
+  width: 465px;
+}
