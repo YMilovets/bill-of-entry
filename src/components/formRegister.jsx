@@ -34,8 +34,8 @@ export default function FormRegister() {
             <div className="form-bill__logo form-bill__logo--letter"></div>
             <h1 className="form-bill__header m-form-header">Без регистрации</h1>
             <p className="form-bill__text m-form-text">Введите адрес электронной почты</p>
-            <form onSubmit={onSend} className="form-bill__wrap">
-                <label>
+            <form onSubmit={onSend} className="form-bill__wrap form-bill__wrap--reg m-form-bill__wrap--reg">
+                <label className="form-bill__email-label">
                     <input ref={emailField} 
                         placeholder="Введите email" 
                         type="text" 
@@ -43,7 +43,9 @@ export default function FormRegister() {
                         onChange={onChange} />
                 </label>
                 <button className="form-bill__send--reg form-bill__send">Продолжить</button>
-                <Link className="form-bill__link" to="#">Вход через Госуслуги</Link>
+                <div className="form-bill__other-auth">
+                    <Link className="form-bill__link" to="#">Вход через Госуслуги</Link>
+                </div>
             </form>
         </div>
     )
