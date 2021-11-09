@@ -3,7 +3,7 @@ import Header from './components/header';
 import FormRegister from './components/formRegister';
 import FormConfirm from './components/formConfirm';
 import FormActivated from './components/formActivated';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import {HashRouter as Router, Switch, Route} from "react-router-dom"
 import Context from './contexts/context';
 import { useState } from "react";
 import ModalAlert from './components/modalAlert';
